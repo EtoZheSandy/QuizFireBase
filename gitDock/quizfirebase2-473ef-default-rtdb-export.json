@@ -1,0 +1,394 @@
+{
+  "quizs": [
+    {
+      "descriptor": "Тест по аниме моя геройская академия!",
+      "id": "1",
+      "questionList": [
+        {
+          "correct": "Изуки",
+          "question": "Как зовут главного персонажа?",
+          "variants": [
+            "Изуки",
+            "Кацуки",
+            "Денки",
+            "Шото"
+          ]
+        },
+        {
+          "correct": "Ол Майт",
+          "question": "Кто является наставником Изуки Мидория?",
+          "variants": [
+            "Эндевор",
+            "Ол Майт",
+            "Эрасер Хед",
+            "Гран Торино"
+          ]
+        },
+        {
+          "correct": "Кацуки Бакуго",
+          "question": "Как зовут лучшего друга и соперника Изуки Мидория?",
+          "variants": [
+            "Шото Тодороки",
+            "Денки Каминари",
+            "Кацуки Бакуго",
+            "Эйджиро Киришима"
+          ]
+        },
+        {
+          "correct": "One For All",
+          "question": "Как называется сила, которую передал Ол Майт Изуки?",
+          "variants": [
+            "One For All",
+            "All For One",
+            "Half-Cold Half-Hot",
+            "Explosion"
+          ]
+        },
+        {
+          "correct": "Энжи Тодороки",
+          "question": "Какой герой работает под псевдонимом 'Эндевор'?",
+          "variants": [
+            "Шото Тодороки",
+            "Энжи Тодороки",
+            "Теня Иида",
+            "Фумикаге Токоями"
+          ]
+        },
+        {
+          "correct": "Очака Урарака",
+          "question": "Как зовут персонажа с силой 'Zero Gravity'?",
+          "variants": [
+            "Мина Ашидо",
+            "Очака Урарака",
+            "Цую Асуй",
+            "Кеко Джиро"
+          ]
+        }
+      ],
+      "time": "5",
+      "title": "Моя геройская академия"
+    },
+    {
+      "descriptor": "Тест по программированию",
+      "id": "2",
+      "questionList": [
+        {
+          "correct": "JavaScript",
+          "question": "Какой язык программирования чаще всего используется для создания интерактивных веб-сайтов?",
+          "variants": [
+            "Java",
+            "Python",
+            "JavaScript",
+            "C#"
+          ]
+        },
+        {
+          "correct": "Git",
+          "question": "Какая система контроля версий широко используется в разработке программного обеспечения?",
+          "variants": [
+            "Subversion",
+            "Mercurial",
+            "Git",
+            "Perforce"
+          ]
+        },
+        {
+          "correct": "Object-Oriented Programming",
+          "question": "Что означает аббревиатура 'OOP' в контексте программирования?",
+          "variants": [
+            "Object-Oriented Programming",
+            "Ordinary Output Procedure",
+            "Optimized Operation Principle",
+            "Online Object Protocol"
+          ]
+        },
+        {
+          "correct": "Syntax Error",
+          "question": "Как называется ошибка, связанная с нарушением правил написания кода в языке программирования?",
+          "variants": [
+            "Runtime Error",
+            "Logical Error",
+            "Syntax Error",
+            "Semantic Error"
+          ]
+        },
+        {
+          "correct": "HTML",
+          "question": "Какой язык используется для разметки содержимого веб-страниц?",
+          "variants": [
+            "CSS",
+            "JavaScript",
+            "HTML",
+            "PHP"
+          ]
+        }
+      ],
+      "time": "5",
+      "title": "Тест по программированию"
+    },
+    {
+      "descriptor": "Тест по McDonald's",
+      "id": "1",
+      "questionList": [
+        {
+          "correct": "Big Mac",
+          "question": "Как называется один из самых популярных бургеров в меню McDonald's?",
+          "variants": [
+            "Whopper",
+            "Big King",
+            "Big Tasty",
+            "Big Mac"
+          ]
+        },
+        {
+          "correct": "1955",
+          "question": "В каком году был основан первый ресторан McDonald's?",
+          "variants": [
+            "1965",
+            "1955",
+            "1975",
+            "1985"
+          ]
+        },
+        {
+          "correct": "Ronald McDonald",
+          "question": "Как зовут символического персонажа, являющегося главным маскотом компании McDonald's?",
+          "variants": [
+            "Happy Meal",
+            "Grimace",
+            "Ronald McDonald",
+            "Hamburglar"
+          ]
+        },
+        {
+          "correct": "Мороженое",
+          "question": "Что из перечисленного не входит в основное меню McDonald's?",
+          "variants": [
+            "Биг Мак",
+            "Чизбургер",
+            "Картофель фри",
+            "Мороженое"
+          ]
+        },
+        {
+          "correct": "Ray Kroc",
+          "question": "Кто считается основателем современной сети ресторанов McDonald's?",
+          "variants": [
+            "Richard McDonald",
+            "Maurice McDonald",
+            "Ray Kroc",
+            "Dave Thomas"
+          ]
+        },
+        {
+          "correct": "Chicken McNuggets",
+          "question": "Как называется популярное блюдо из куриного мяса в меню McDonald's?",
+          "variants": [
+            "McChicken",
+            "McNuggets",
+            "Chicken Tenders",
+            "Chicken McNuggets"
+          ]
+        },
+        {
+          "correct": "Великобритания",
+          "question": "В какой стране находится родина компании McDonald's?",
+          "variants": [
+            "США",
+            "Канада",
+            "Великобритания",
+            "Австралия"
+          ]
+        },
+        {
+          "correct": "100 миллиардов",
+          "question": "Примерно сколько бургеров было продано McDonald's по всему миру к 2020 году?",
+          "variants": [
+            "50 миллиардов",
+            "75 миллиардов",
+            "100 миллиардов",
+            "125 миллиардов"
+          ]
+        }
+      ],
+      "time": "5",
+      "title": "McDonald's Quiz"
+    },
+    {
+      "descriptor": "Тест по природе",
+      "id": "1",
+      "questionList": [
+        {
+          "correct": "Амазонка",
+          "question": "Какая из рек является самой длинной в мире?",
+          "variants": [
+            "Нил",
+            "Миссисипи",
+            "Амазонка",
+            "Янцзы"
+          ]
+        },
+        {
+          "correct": "Фотосинтез",
+          "question": "Как называется процесс, в ходе которого растения преобразуют световую энергию в химическую энергию?",
+          "variants": [
+            "Дыхание",
+            "Реакция",
+            "Фотосинтез",
+            "Осмос"
+          ]
+        },
+        {
+          "correct": "Everest",
+          "question": "Как называется самая высокая гора на Земле?",
+          "variants": [
+            "Килиманджаро",
+            "Эльбрус",
+            "Everest",
+            "Дениали"
+          ]
+        },
+        {
+          "correct": "Африка",
+          "question": "Где расположен самый большой по площади пустыня в мире - Сахара?",
+          "variants": [
+            "Африка",
+            "Австралия",
+            "Азия",
+            "Северная Америка"
+          ]
+        },
+        {
+          "correct": "Тайга",
+          "question": "Какой из перечисленных типов лесов характерен для зоны субарктики?",
+          "variants": [
+            "Тайга",
+            "Джунгли",
+            "Саванна",
+            "Лагуна"
+          ]
+        },
+        {
+          "correct": "Галапагосские острова",
+          "question": "На каком архипелаге Дарвин собирал материалы для своей теории естественного отбора?",
+          "variants": [
+            "Фиджи",
+            "Маврикий",
+            "Галапагосские острова",
+            "Канарские острова"
+          ]
+        },
+        {
+          "correct": "Карибское море",
+          "question": "Где находится самый большой по площади барьерный риф в мире?",
+          "variants": [
+            "Красное море",
+            "Карибское море",
+            "Аравийское море",
+            "Индийский океан"
+          ]
+        },
+        {
+          "correct": "Магнитное поле",
+          "question": "Что защищает Землю от вредных солнечных излучений?",
+          "variants": [
+            "Озоновый слой",
+            "Магнитное поле",
+            "Водяной пар",
+            "Атмосферный пыль"
+          ]
+        }
+      ],
+      "time": "5",
+      "title": "Природа Quiz"
+    },
+    {
+      "descriptor": "Тест по фильмам",
+      "id": "1",
+      "questionList": [
+        {
+          "correct": "The Shawshank Redemption",
+          "question": "Какой фильм признан IMDb лучшим фильмом всех времен?",
+          "variants": [
+            "The Godfather",
+            "Pulp Fiction",
+            "The Shawshank Redemption",
+            "The Dark Knight"
+          ]
+        },
+        {
+          "correct": "Leonardo DiCaprio",
+          "question": "Кто сыграл главную роль в фильме 'Волк с Уолл-стрит'?",
+          "variants": [
+            "Brad Pitt",
+            "Tom Cruise",
+            "Leonardo DiCaprio",
+            "Christian Bale"
+          ]
+        },
+        {
+          "correct": "Forrest Gump",
+          "question": "Как называется фильм, в котором главную роль играет Том Хэнкс, история жизни простого, но необычного человека?",
+          "variants": [
+            "The Green Mile",
+            "Cast Away",
+            "Forrest Gump",
+            "Saving Private Ryan"
+          ]
+        },
+        {
+          "correct": "Quentin Tarantino",
+          "question": "Кто является режиссером фильма 'Криминальное чтиво'?",
+          "variants": [
+            "Steven Spielberg",
+            "Martin Scorsese",
+            "Quentin Tarantino",
+            "Christopher Nolan"
+          ]
+        },
+        {
+          "correct": "The Lord of the Rings: The Return of the King",
+          "question": "Какой фильм получил самое большое количество оскаров?",
+          "variants": [
+            "Titanic",
+            "The Lord of the Rings: The Return of the King",
+            "Gladiator",
+            "Schindler's List"
+          ]
+        },
+        {
+          "correct": "Fight Club",
+          "question": "Как называется фильм, где борьба с самим собой становится главной темой?",
+          "variants": [
+            "Pulp Fiction",
+            "The Matrix",
+            "Fight Club",
+            "Inception"
+          ]
+        },
+        {
+          "correct": "Alfred Hitchcock",
+          "question": "Кто является режиссером фильма 'Психо'?",
+          "variants": [
+            "Stanley Kubrick",
+            "Francis Ford Coppola",
+            "Alfred Hitchcock",
+            "Orson Welles"
+          ]
+        },
+        {
+          "correct": "The Dark Knight",
+          "question": "Какой фильм считается одним из лучших фильмов о супергероях, где Хит Леджер сыграл роль Жокера?",
+          "variants": [
+            "Avengers: Infinity War",
+            "The Dark Knight",
+            "Spider-Man: Into the Spider-Verse",
+            "Guardians of the Galaxy"
+          ]
+        }
+      ],
+      "time": "5",
+      "title": "Фильмы Quiz"
+    }
+  ]
+}
