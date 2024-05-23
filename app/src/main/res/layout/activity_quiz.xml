@@ -68,7 +68,7 @@
             <TextView
                 android:id="@+id/tvQuizQuestion"
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="wrap_content"
                 tools:text="Сколько подлежаподлежащих в английскщих в английском языке?"
                 android:textSize="20sp"
                 android:textStyle="bold"
