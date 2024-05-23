@@ -25,9 +25,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun getDataFromFirebase() {
         //get data
-        quizModelList.add(QuizModel("1", "Програмиование", "Базовое програмировапние", "10"))
-        quizModelList.add(QuizModel("2", "Японский язык", "Как хорошо ты знаешь японский", "5"))
-        quizModelList.add(QuizModel("3", "Английский", "Как хорошо ты знаешь английский", "7"))
+        val listQuestionModel = mutableListOf<QuestionModel>()
+        listQuestionModel.add(QuestionModel("Сколько букв в английском языке?", listOf("43", "32", "15", "0"), "32"))
+        listQuestionModel.add(QuestionModel("Сколько букв в английском языке 2?", listOf("43", "32", "15", "0"), "32"))
+        listQuestionModel.add(QuestionModel("Сколько букв в английском языке 3?", listOf("43", "32", "15", "0"), "32"))
+
+        quizModelList.add(QuizModel("1", "Програмиование", "Базовое програмировапние", "10", listQuestionModel))
+        quizModelList.add(QuizModel("2", "Японский язык", "Как хорошо ты знаешь японский", "5", emptyList()))
+        quizModelList.add(QuizModel("3", "Английский", "Как хорошо ты знаешь английский", "7", emptyList()))
         setupRecycleView()
     }
 

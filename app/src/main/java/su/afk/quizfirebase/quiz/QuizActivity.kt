@@ -6,10 +6,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import su.afk.quizfirebase.R
+import su.afk.quizfirebase.databinding.ActivityQuizBinding
 
 class QuizActivity : AppCompatActivity() {
+    lateinit var binding: ActivityQuizBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_quiz)
+        binding = ActivityQuizBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
+
+
 }
