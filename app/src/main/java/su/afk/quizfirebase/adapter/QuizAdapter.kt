@@ -1,12 +1,12 @@
-package su.afk.quizfirebase
+package su.afk.quizfirebase.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import su.afk.quizfirebase.databinding.RvMainQuizItemBinding
+import su.afk.quizfirebase.models.QuizModel
 import su.afk.quizfirebase.quiz.QuizActivity
-import java.util.zip.Inflater
 
 class QuizAdapter(private val quizModelList: List<QuizModel>) :
     RecyclerView.Adapter<QuizAdapter.QuizViewHolder>() {

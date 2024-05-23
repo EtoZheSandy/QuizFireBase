@@ -6,12 +6,9 @@ import android.os.CountDownTimer
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import su.afk.quizfirebase.QuestionModel
+import su.afk.quizfirebase.models.QuestionModel
 import su.afk.quizfirebase.R
 import su.afk.quizfirebase.databinding.ActivityQuizBinding
 import su.afk.quizfirebase.databinding.DialogScoreBinding
