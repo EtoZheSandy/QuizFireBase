@@ -1,5 +1,6 @@
 package su.afk.quizfirebase
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -12,8 +13,9 @@ import com.google.firebase.database.ValueEventListener
 import su.afk.quizfirebase.adapter.QuizAdapter
 import su.afk.quizfirebase.databinding.ActivityMainBinding
 import su.afk.quizfirebase.models.QuizModel
+import su.afk.quizfirebase.quiz.QuizActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), QuizAdapter.listenerQuiz {
     lateinit var binding: ActivityMainBinding
     lateinit var quizModelList: MutableList<QuizModel>
     lateinit var adapter: QuizAdapter
@@ -29,7 +31,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun getDataFromFirebase() {
         binding.progressBarQuiz.visibility = View.VISIBLE
-
         // Получаем доступ к корневой директории базы данных
         val database = FirebaseDatabase.getInstance().reference
 
@@ -48,7 +49,6 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onCancelled(databaseError: DatabaseError) {
-                // Обработка ошибки
                 Log.e("MainActivity", "Failed to read value.", databaseError.toException())
             }
         })
@@ -56,8 +56,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupRecycleView() {
         binding.progressBarQuiz.visibility = View.GONE
-        adapter = QuizAdapter(quizModelList)
+        adapter = QuizAdapter(this, quizModelList)
         binding.recycleView.layoutManager = LinearLayoutManager(this)
         binding.recycleView.adapter = adapter
+    }
+
+    override fun startQuiz(quiz: QuizModel) {
+            val intent = Intent(this, QuizActivity::class.java).apply {
+                putExtra(QuizActivity.QUIZ, quiz)
+            }
+            startActivity(intent)
     }
 }

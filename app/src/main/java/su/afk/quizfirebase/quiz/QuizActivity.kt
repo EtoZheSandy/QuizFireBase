@@ -12,17 +12,21 @@ import su.afk.quizfirebase.models.QuestionModel
 import su.afk.quizfirebase.R
 import su.afk.quizfirebase.databinding.ActivityQuizBinding
 import su.afk.quizfirebase.databinding.DialogScoreBinding
+import su.afk.quizfirebase.models.QuizModel
 
 class QuizActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var binding: ActivityQuizBinding
     var currentQuestionIndex = 0
     var selectedAnswer = ""
     var score = 0
+    var questionModelList : List<QuestionModel> = listOf()
+    var timer : String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityQuizBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        getQuizIntent()
         loadQuestions()
         startTimer()
 
@@ -94,11 +98,8 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
 //    }
 
 
-
-
     companion object {
-        var questionModelList : List<QuestionModel> = listOf()
-        var timer : String = ""
+        const val QUIZ = "quiz"
     }
 
     override fun onClick(view: View?) {
@@ -153,5 +154,12 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
             .setView(dialogBinding.root)
             .setCancelable(false)
             .show()
+    }
+
+    private fun getQuizIntent() {
+        val quiz = intent.getSerializableExtra(QUIZ)
+        val quizModel = quiz as QuizModel
+        questionModelList = quizModel.questionList
+        timer = quizModel.time
     }
 }
