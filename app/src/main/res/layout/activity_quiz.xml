@@ -51,5 +51,93 @@
         android:layout_marginVertical="10dp"
         tools:progress="60"
         android:id="@+id/progressBar"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
+        android:elevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvQuizQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                tools:text="Сколько подлежаподлежащих в английскщих в английском языке?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/blue"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginVertical="8dp"
+                />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/grey"
+                tools:text="Около 25 штук"
+                android:textColor="@color/black"
+                android:paddingVertical="14dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/grey"
+                tools:text="Около 15 штук"
+                android:textColor="@color/black"
+                android:paddingVertical="14dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/grey"
+                tools:text="Около 45 штук"
+                android:textColor="@color/black"
+                android:paddingVertical="14dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/grey"
+                tools:text="Около 55 штук"
+                android:textColor="@color/black"
+                android:paddingVertical="14dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnNextQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="@color/orange"
+                tools:text="Далее"
+                android:textColor="@color/white"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="30dp"
+                android:layout_gravity="end"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
     
 </LinearLayout>
