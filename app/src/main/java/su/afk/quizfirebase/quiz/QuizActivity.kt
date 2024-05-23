@@ -123,6 +123,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
 
     //диалоговое окно
     private fun finishQuiz() {
-
+        val totalQuestion = questionModelList.size
+        val percentage = (score.toFloat() / totalQuestion.toFloat() * 100).toInt()
     }
 }
