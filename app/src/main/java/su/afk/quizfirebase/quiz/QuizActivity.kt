@@ -1,16 +1,20 @@
 package su.afk.quizfirebase.quiz
 
+import android.graphics.Color
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import su.afk.quizfirebase.QuestionModel
 import su.afk.quizfirebase.R
 import su.afk.quizfirebase.databinding.ActivityQuizBinding
+import su.afk.quizfirebase.databinding.DialogScoreBinding
 
 class QuizActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var binding: ActivityQuizBinding
@@ -30,6 +34,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
             btn1.setOnClickListener(this@QuizActivity)
             btn2.setOnClickListener(this@QuizActivity)
             btn3.setOnClickListener(this@QuizActivity)
+            btnNextQuiz.setOnClickListener(this@QuizActivity)
         }
     }
 
@@ -109,8 +114,12 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
         }   // делаем все кнеопки серыми при клике
 
         val clickedButton = view as Button
-        if(clickedButton.id == R.id.btnNextQuiz) {
-            //нажата кнопка далее
+        if(clickedButton.id == R.id.btnNextQuiz) {//нажата кнопка далее
+            if(selectedAnswer.isEmpty()){ // если никакой вариант ответа не выбран
+                Toast.makeText(applicationContext, "Выберите вариант ответа", Toast.LENGTH_LONG).show()
+                return
+            }
+
             if(selectedAnswer == questionModelList[currentQuestionIndex].correct) score++ // если ответ был верным
             currentQuestionIndex ++
             loadQuestions()
@@ -120,10 +129,32 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-
     //диалоговое окно
     private fun finishQuiz() {
         val totalQuestion = questionModelList.size
         val percentage = (score.toFloat() / totalQuestion.toFloat() * 100).toInt()
+
+        val dialogBinding = DialogScoreBinding.inflate(layoutInflater)
+        dialogBinding.apply {
+            progressbar.progress = percentage
+            tvScoreProgressText.text = "$percentage %"
+
+            if(percentage > 60) {
+                tvScoreTitle.text = "Тест успешно пройден!"
+                tvScoreTitle.setTextColor(Color.BLUE)
+            } else {
+                tvScoreTitle.text = "Тест не пройден :с"
+                tvScoreTitle.setTextColor(Color.RED)
+            }
+            tvScoreSub.text = "$score из $totalQuestion вопросов было правильными"
+            btnFinish.setOnClickListener {
+                finish()
+            }
+        }
+
+        AlertDialog.Builder(this)
+            .setView(dialogBinding.root)
+            .setCancelable(false)
+            .show()
     }
 }

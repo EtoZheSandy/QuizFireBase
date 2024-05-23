@@ -1,15 +1,21 @@
 package su.afk.quizfirebase
 
 data class QuizModel(
-    val id: String,
-    val title: String,
-    val descriptor: String,
-    val time: String,
-    val questionList: List<QuestionModel>
+    var id: String = "",
+    var title: String = "",
+    var descriptor: String = "",
+    var time: String = "",
+    var questionList: List<QuestionModel> = listOf()
 )
+//{
+//    constructor() : this("", "", "", "", emptyList())
+//}
 
 data class QuestionModel(
-    val question: String,
-    val variants: List<String>,
-    val correct: String
+    var question: String = "",
+    var variants: List<String> = listOf(),
+    var correct: String = ""
 )
+//{
+//    constructor() : this("", emptyList(), "")
+//}

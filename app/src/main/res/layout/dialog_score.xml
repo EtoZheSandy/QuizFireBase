@@ -22,13 +22,14 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            tools:progress="40"
+            app:indicatorSize="100dp"
             app:trackCornerRadius="20dp"
             app:trackThickness="8dp"
-            app:indicatorSize="100dp"/>
+            tools:progress="40" />
         <TextView
             android:id="@+id/tvScoreProgressText"
             android:layout_width="wrap_content"
