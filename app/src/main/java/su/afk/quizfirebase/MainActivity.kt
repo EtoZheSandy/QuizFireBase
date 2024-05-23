@@ -5,11 +5,13 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import su.afk.quizfirebase.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     lateinit var quizModelList: MutableList<QuizModel>
+    lateinit var adapter: QuizAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +32,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupRecycleView() {
-        TODO("Not yet implemented")
+        adapter = QuizAdapter(quizModelList)
+        binding.recycleView.layoutManager = LinearLayoutManager(this)
+        binding.recycleView.adapter = adapter
     }
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".quiz.QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvQuizIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Вопрос 6/10"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_time"
+            app:tint="@color/blue"
+            android:layout_toStartOf="@id/tvQuizTimeTimer"
+            android:layout_marginEnd="4dp"
+            android:layout_centerVertical="true"
+            />
+        
+        <TextView
+            android:id="@+id/tvQuizTimeTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="7:43"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        tools:progress="60"
+        android:id="@+id/progressBar"/>
+    
+</LinearLayout>
