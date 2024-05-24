@@ -41,6 +41,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun loadQuestions() {
         selectedAnswer = ""
+        binding.progressBar.progress = (currentQuestionIndex.toFloat() / questionModelList.size.toFloat() * 100).toInt()
         if(currentQuestionIndex == questionModelList.size) {
             finishQuiz() //если вопросов больше нету
             return
@@ -48,7 +49,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
 
         binding.apply {
             tvQuizIndicator.text = "Вопрос ${currentQuestionIndex+1}/${questionModelList.size}"
-            progressBar.progress = (currentQuestionIndex.toFloat() / questionModelList.size.toFloat() * 100).toInt()
+//            progressBar.progress = (currentQuestionIndex.toFloat() / questionModelList.size.toFloat() * 100).toInt()
             tvQuizQuestion.text = questionModelList[currentQuestionIndex].question
             btn0.text = questionModelList[currentQuestionIndex].variants[0]
             btn1.text = questionModelList[currentQuestionIndex].variants[1]
