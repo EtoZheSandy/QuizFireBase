@@ -15,5 +15,5 @@ data class QuestionModel(
     var question: String = "",
     var variants: List<String> = listOf(),
     var correct: String = ""
-)
+) : Serializable
 
