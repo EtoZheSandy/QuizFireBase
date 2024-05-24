@@ -15,12 +15,12 @@ import su.afk.quizfirebase.databinding.DialogScoreBinding
 import su.afk.quizfirebase.models.QuizModel
 
 class QuizActivity : AppCompatActivity(), View.OnClickListener {
-    lateinit var binding: ActivityQuizBinding
-    var currentQuestionIndex = 0
-    var selectedAnswer = ""
-    var score = 0
-    var questionModelList : List<QuestionModel> = listOf()
-    var timer : String = ""
+    private lateinit var binding: ActivityQuizBinding
+    private var currentQuestionIndex = 0
+    private var selectedAnswer = ""
+    private var score = 0
+    private var questionModelList : List<QuestionModel> = listOf()
+    private var timer : String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,12 +54,6 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
             btn1.text = questionModelList[currentQuestionIndex].variants[1]
             btn2.text = questionModelList[currentQuestionIndex].variants[2]
             btn3.text = questionModelList[currentQuestionIndex].variants[3]
-//            btnNextQuiz.setOnClickListener {
-//                buttonClick(btn0)
-//                buttonClick(btn1)
-//                buttonClick(btn2)
-//                buttonClick(btn3)
-//            }
         }
 
     }
@@ -76,27 +70,10 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
 
             override fun onFinish() {
                 // Finish the quiz
+                finishQuiz()
             }
         }.start()
     }
-
-
-//    private fun buttonClick(buttonView: View){
-//            btn0.text = questionModelList[currentQuestionIndex].variants[0]
-//            btn1.text = questionModelList[currentQuestionIndex].variants[1]
-//            btn2.text = questionModelList[currentQuestionIndex].variants[2]
-//            btn3.text = questionModelList[currentQuestionIndex].variants[3]
-//    }
-
-//    private fun onClick(buttonView: View) {
-//        object : View.OnClickListener {
-//            override fun onClick(v: View?) {
-//                TODO("Not yet implemented")
-//            }
-//
-//        }
-//    }
-
 
     companion object {
         const val QUIZ = "quiz"

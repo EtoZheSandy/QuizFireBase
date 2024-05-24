@@ -16,9 +16,9 @@ import su.afk.quizfirebase.models.QuizModel
 import su.afk.quizfirebase.quiz.QuizActivity
 
 class MainActivity : AppCompatActivity(), QuizAdapter.listenerQuiz {
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     lateinit var quizModelList: MutableList<QuizModel>
-    lateinit var adapter: QuizAdapter
+    private lateinit var adapter: QuizAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

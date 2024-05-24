@@ -17,14 +17,7 @@ class QuizAdapter(private val listener: listenerQuiz, private val quizModelList:
                 quizDescriptor.text = model.descriptor
                 quizTime.text = model.time + " min"
                 root.setOnClickListener {
-//                    val intent = Intent(root.context, QuizActivity::class.java)
                     listener.startQuiz(model)
-//                    // TODO: Перенести в листенер и на mainActivity
-//                    // TODO: На main activity сделать перенос вопросов через сериализацию вместе с intetn
-//                    // или подойти как solo activity на фрагментах?
-//                    QuizActivity.questionModelList = model.questionList
-//                    QuizActivity.timer = model.time
-//                    root.context.startActivity(intent)
                 }
             }
         }
